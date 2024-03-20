@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#creacion de grupo
+New-AzResourceGroup -Name 'A3' -Location 'East US2'
+
+#Crear máquina virtual
+New-AzVm -ResourceGroupName 'A3' 
+-Name 'basico1' -Location 'eastus2' 
+-Image 'MicrosoftWindowsServer:WindowsServer:2022-datacenter-azure-edition:latest' 
+-VirtualNetworkName 'myVnet' 
+-SubnetName 'mySubnet' 
+-SecurityGroupName 'myNetworkSecurityGroup' 
+-PublicIpAddressName 'myPublicIpAddress' 
+-OpenPorts 80,3389
+falta usuario
+falta clase administrador
+
+#Instalación del servidor web
+Invoke-AzVMRunCommand 
+-ResourceGroupName 'A3' 
+-VMName 'basico1' -CommandId 'RunPowerShellScript' 
+-ScriptString 'Install-WindowsFeature -Name Web-Server 
+-IncludeManagementTools'
+
