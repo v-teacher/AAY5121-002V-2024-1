@@ -7,3 +7,4 @@ URLs de utilidad
 -------------------------
 - [Conectar Github Actions al portal de Azure](https://learn.microsoft.com/es-es/azure/developer/github/connect-from-azure?tabs=azure-portal%2Clinux#use-the-azure-login-action-with-a-service-principal-secret)
 - [Ejemplo de despligue de MV en Azure con Azure CLI y Bash](https://github.com/v-teacher/AAY5121-002V-2024-1/blob/main/vm-deploy.sh)
+- [Creando rol para RBAC con Azure Cli](https://github.com/v-teacher/AAY5121-002V-2024-1/blob/main/notes.md#ejemplo-creaci%C3%B3n-de-rol-pararbac-usando-azure-cli-floppy_disk)
